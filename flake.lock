@@ -1,0 +1,43 @@
+{
+  "nodes": {
+    "geph4-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1666410404,
+        "narHash": "sha256-QlQ5Hh6OU9u2SLlXJqzZ8AuOhELxzRRQt1pndGrs20o=",
+        "owner": "geph-official",
+        "repo": "geph4-client",
+        "rev": "efde172b945bbcce351c15ecdd2c5c84efb4f32e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "geph-official",
+        "repo": "geph4-client",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1666853718,
+        "narHash": "sha256-JMONvHaoRwUCedeYtCD+YLLeRLCperOAEDgwzTWatMU=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "bd545b559f0c573074a7fc37acba27be4be2dbeb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "geph4-src": "geph4-src",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
