@@ -19,6 +19,7 @@
     packages."x86_64-linux".default = pkgs.rustPlatform.buildRustPackage {
       name = "geph4-client";
       src = geph4-src;
+      doCheck = false;
       nativeBuildInputs = with pkgs; [ perl ];
       cargoLock = { lockFile = "${geph4-src}/Cargo.lock"; };
     };   
