@@ -28,5 +28,10 @@ jobs:
         with:
           extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+      - run: nix flake lock --update-input nixpkgs --update-input geph4-src
       - run: nix build
       - run: nix flake check
+      - uses: EndBug/add-and-commit@v9
+        with:
+          message: Update Flake
+          default_author: github_actions
